@@ -74,13 +74,11 @@ h6 {
 
 
 /* Styling to see the page layout */
-.container,
 .sidebar,
-.content,
 .header,
 .form-container,
 .footer {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     padding: 0.5em;
     /* margin: 1em; */
 }
@@ -93,6 +91,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgb(26, 26, 26);
 }
 .container {
     display: flex;
@@ -103,17 +102,24 @@ body {
 
 .sidebar {
     flex: 1;
+    background-image: url("./images/halie-west-25xggax4bSA-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .content {
     flex: 2;
     display: flex;
     flex-direction: column;
+    background-color: rgb(240, 240, 240);
 }
 
 /* Content Styling  */
 .header {
     flex: 1;
+    display: inline-block;
+    align-items: end;
+    width: 60ch;
 }
 
 .form-container {
@@ -122,4 +128,27 @@ body {
 
 .footer {
     flex: 1;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    flex-grow: 1;
+    padding: .5em;
+}
+
+.create-button {
+    background-color: #596D48;
+    color: #fff;
+    padding: .5rem 2rem;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
 }
